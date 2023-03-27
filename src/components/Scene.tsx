@@ -10,8 +10,6 @@ export const Scene = ({ bright, picture }: Props) => {
   return (
     <div>
       <div className=" z-[-1] w-[100%]">
-        {/* <img src={picture} className="h-screen object-cover brightness-[80%]" alt="" /> */}
-
         <video
           className={
             bright
