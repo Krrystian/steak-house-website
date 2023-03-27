@@ -2,25 +2,37 @@ import React from "react";
 
 interface Props {
   bright: boolean;
-  picture: string;
-  video?: string;
+  source: string;
+  video?: boolean;
 }
 
-export const Scene = ({ bright, picture }: Props) => {
+export const Scene = ({ bright, source, video = false }: Props) => {
   return (
     <div>
       <div className=" z-[-1] w-[100%]">
-        <video
-          className={
-            bright
-              ? "w-[100%] h-screen object-cover brightness-[30%]"
-              : "w-[100%] h-screen object-cover brightness-[80%]"
-          }
-          src={picture}
-          //autoPlay
-          muted
-          loop
-        ></video>
+        {video ? (
+          <video
+            className={
+              bright
+                ? " h-screen object-cover brightness-[30%]"
+                : " h-screen object-cover brightness-[80%]"
+            }
+            src={source}
+            //autoPlay
+            muted
+            loop
+          ></video>
+        ) : (
+          <img
+            src={source}
+            className={
+              bright
+                ? " h-screen object-cover brightness-[30%]"
+                : " h-screen object-cover brightness-[80%]"
+            }
+            alt=""
+          />
+        )}
       </div>
     </div>
   );

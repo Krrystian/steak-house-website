@@ -30,7 +30,7 @@ function App() {
         navbarOpen={navbarOpen}
         setNavbarOpen={setNavbarOpen}
       />
-      <Scene bright={navbarOpen} picture="/src/assets/video.mp4" />
+      <Scene bright={navbarOpen} video={true} source="/src/assets/video.mp4" />
     </>
   );
 }
