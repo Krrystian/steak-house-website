@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 import { Scene } from "./components/Scene";
 
@@ -22,7 +23,7 @@ const items = [
 ];
 
 function App() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
   return (
     <>
       <Navbar
@@ -30,16 +31,10 @@ function App() {
         navbarOpen={navbarOpen}
         setNavbarOpen={setNavbarOpen}
       />
-      <Scene
-        onMenuOpen={navbarOpen}
-        video={true}
-        source="/src/assets/video.mp4"
-      ></Scene>
-      <Scene
-        onMenuOpen={navbarOpen}
-        brightness={"30"}
-        source="/src/assets/grill.jpg"
-      ></Scene>
+      <Scene video={true} source="/src/assets/video2.mp4"></Scene>
+      <Scene bright={"0.4"} source="/src/assets/blackbackground.jpg">
+        <Hero />
+      </Scene>
     </>
   );
 }
