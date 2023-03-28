@@ -1,39 +1,52 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 interface Props {
-  bright: boolean;
+  onMenuOpen: boolean;
   source: string;
   video?: boolean;
+  children?: ReactNode;
+  brightness?: string;
 }
 
-export const Scene = ({ bright, source, video = false }: Props) => {
+export const Scene = ({
+  onMenuOpen,
+  source,
+  video = false,
+  children,
+  brightness = "80",
+}: Props) => {
   return (
     <div>
-      <div className=" z-[-1] w-[100%]">
+      <div className=" absolute z-[-1] w-[100%]">
         {video ? (
           <video
             className={
-              bright
-                ? " h-screen object-cover brightness-[30%]"
-                : " h-screen object-cover brightness-[80%]"
+              onMenuOpen
+                ? "w-[100%] h-screen object-cover brightness-[30%]"
+                : "w-[100%] h-screen object-cover brightness-[" +
+                  brightness +
+                  "%]"
             }
             src={source}
             //autoPlay
             muted
             loop
-          ></video>
+          />
         ) : (
           <img
             src={source}
             className={
-              bright
-                ? " h-screen object-cover brightness-[30%]"
-                : " h-screen object-cover brightness-[80%]"
+              onMenuOpen
+                ? "w-[100%] h-screen object-cover brightness-[30%]"
+                : "w-[100%] h-screen object-cover brightness-[" +
+                  brightness +
+                  "%]"
             }
             alt=""
           />
         )}
       </div>
+      <div className="h-screen z-10 mb-3">{children}</div>
     </div>
   );
 };

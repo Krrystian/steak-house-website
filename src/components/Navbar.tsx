@@ -16,7 +16,7 @@ export const Navbar = ({ items, navbarOpen, setNavbarOpen }: Props) => {
   return (
     <>
       <div className="fixed cursor-default z-50">
-        <div className="w-screen h-[100px] text-3xl pt-8 text-slate-300 font-codepro cursor-defaul relative">
+        <div className="w-screen h-[100px] text-2xl pt-8 text-slate-300 font-codepro cursor-defaul relative">
           <div className="lg:hidden absolute mx-4 cursor-pointer">
             <a>
               <Hamburger toggled={navbarOpen} toggle={setNavbarOpen} />

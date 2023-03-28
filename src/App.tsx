@@ -30,7 +30,16 @@ function App() {
         navbarOpen={navbarOpen}
         setNavbarOpen={setNavbarOpen}
       />
-      <Scene bright={navbarOpen} video={true} source="/src/assets/video.mp4" />
+      <Scene
+        onMenuOpen={navbarOpen}
+        video={true}
+        source="/src/assets/video.mp4"
+      ></Scene>
+      <Scene
+        onMenuOpen={navbarOpen}
+        brightness={"30"}
+        source="/src/assets/grill.jpg"
+      ></Scene>
     </>
   );
 }
