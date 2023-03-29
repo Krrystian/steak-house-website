@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Hero } from "./components/Hero";
+import { AboutUs } from "./components/AboutUs";
 import { Navbar } from "./components/Navbar";
 import { Scene } from "./components/Scene";
 
@@ -32,8 +32,8 @@ function App() {
         setNavbarOpen={setNavbarOpen}
       />
       <Scene video={true} source="/src/assets/video2.mp4"></Scene>
-      <Scene bright={"0.4"} source="/src/assets/blackbackground.jpg">
-        <Hero />
+      <Scene bright={"0.6"} source="/src/assets/blackbackground.jpg">
+        <AboutUs />
       </Scene>
     </>
   );

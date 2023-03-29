@@ -28,7 +28,11 @@ export const Navbar = ({ items, navbarOpen, setNavbarOpen }: Props) => {
   return (
     <>
       <div className="fixed cursor-default w-full z-50 flex flex-col">
-        <div className="w-screen h-[100px] text-2xl text-slate-300 font-codepro cursor-default flex relative">
+        <div
+          className={`w-screen h-[100px] text-2xl text-slate-300 font-codepro cursor-default flex relative transition-all duration-500 ${
+            scrollPosition > 100 ? "bg-black" : ""
+          }`}
+        >
           <div className="flex items-center xl:hidden mx-4 cursor-pointer">
             <a>
               <Hamburger toggled={navbarOpen} toggle={setNavbarOpen} />
@@ -60,11 +64,13 @@ export const Navbar = ({ items, navbarOpen, setNavbarOpen }: Props) => {
             className={
               navbarOpen
                 ? "hidden"
-                : "absolute top-[100%] right-[50%] translate-x-[50%] translate-y-[-50%] flex flex-col text-center"
+                : scrollPosition < 100
+                ? "absolute top-[100%] right-[50%] translate-x-[50%] translate-y-[-50%] flex flex-col text-center"
+                : "absolute top-[50%] right-[50%] translate-x-[50%] translate-y-[-50%] flex flex-col justify-center text-center transition-all duration-500 scale-[.6]"
             }
           >
             <div className="text-2xl md:text-4xl text-slate-400">HIGH</div>
-            <div className="text-slate-100 text-6xl md:text-9xl">STEAK</div>
+            <div className="text-6xl md:text-9xl text-slate-100">STEAK</div>
           </div>
         </div>
         <div>
