@@ -10,10 +10,6 @@ interface Props {
 export const AboutUs = ({ items }: Props) => {
   return (
     <>
-      <h3 className=" text-neutral-300 md:text-6xl text-4xl font-codepro text-center italic px-5 pt-[120px]">
-        We put <span className="text-[#fc6203]">High-Stake</span> to make
-        <span className="text-[#fc6203]"> High-Steak</span> for every occasion.
-      </h3>
       <div className=" grid grid-cols-1 md:grid-cols-3 gap-2 m-8">
         {items.map((item, index) => (
           <div className="relative">

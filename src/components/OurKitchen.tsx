@@ -2,10 +2,10 @@ import React from "react";
 
 export const OurKitchen = () => {
   return (
-    <div>
-      <div className="grid grid-cols-1 md:grid-cols-3 md:h-screen :h-[150vh] px-4 md:px-24 pt-[110px] flex-wrap overflow-hidden">
-        <div className="col-span-2 text-neutral-300 font-codepro text-center flex flex-col gap-20">
-          <h3 className="md:text-6xl text-4xl italic md:pt-[120px] pt-[60px]">
+    <div className="relative">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:h-screen px-4 md:px-16 pb-12">
+        <div className="col-span-2 text-neutral-300 font-codepro text-center flex flex-col justify-center gap-20">
+          <h3 className="md:text-6xl text-4xl italic pt-[60px]">
             We put <span className="text-[#fc6203]">High-Stake</span> to make
             <span className="text-[#fc6203]"> High-Steak</span>.
           </h3>
@@ -24,7 +24,7 @@ export const OurKitchen = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center mx-16 md:order-first">
+        <div className="flex justify-center mx-4 md:order-first pt-[100px]">
           <img
             src="/src/assets/Food/liveCooking.jpg"
             className="md:h-[44rem] w-full object-cover rounded-xl shadow-2xl brightness-[90%] shadow-slate-900"
@@ -32,6 +32,11 @@ export const OurKitchen = () => {
           />
         </div>
       </div>
+      <img
+        src="src/assets/blackbackground.jpg"
+        className="absolute z-[-1] top-0 left-0 object-fill h-full w-full brightness-[80%]"
+        alt=""
+      />
     </div>
   );
 };

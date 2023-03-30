@@ -59,14 +59,7 @@ function App() {
         setNavbarOpen={setNavbarOpen}
       />
       <Scene video={true} source="/src/assets/video2.mp4"></Scene>
-      <Scene
-        bright={"0.6"}
-        media={"150vh"}
-        source="/src/assets/blackbackground.jpg"
-      >
-        {/* <AboutUs items={images} /> */}
-        <OurKitchen />
-      </Scene>
+      <OurKitchen />
     </>
   );
 }
