@@ -20,7 +20,7 @@ export const Scene = ({
           <video
             className={"w-[100%] h-screen object-cover brightness-[0.7]"}
             src={source}
-            autoPlay
+            // autoPlay
             muted
             loop
           />
