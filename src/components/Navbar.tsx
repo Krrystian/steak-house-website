@@ -27,7 +27,7 @@ export const Navbar = ({ items, navbarOpen, setNavbarOpen }: Props) => {
   };
   return (
     <>
-      <div className="fixed cursor-default w-full z-50 flex flex-col">
+      <div className="fixed cursor-default w-full z-[9999] flex flex-col">
         <div
           className={`w-screen h-[100px] text-2xl text-slate-300 font-codepro cursor-default flex relative transition-all duration-500 ${
             scrollPosition > 100 ? "bg-black" : ""
@@ -97,7 +97,7 @@ export const Navbar = ({ items, navbarOpen, setNavbarOpen }: Props) => {
       <div
         className={
           navbarOpen
-            ? "fixed top-0 left-0 h-full min-h-screen w-screen bg-black opacity-70"
+            ? "fixed top-0 left-0 h-full min-h-screen w-screen z-[999] bg-black opacity-70"
             : "hidden"
         }
       ></div>
