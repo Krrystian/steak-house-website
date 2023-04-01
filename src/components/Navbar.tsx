@@ -97,7 +97,7 @@ export const Navbar = ({ items, navbarOpen, setNavbarOpen }: Props) => {
       <div
         className={
           navbarOpen
-            ? "fixed top-0 left-0 h-full min-h-screen w-screen z-[999] bg-black opacity-70"
+            ? "fixed top-0 left-0 h-full min-h-screen w-screen z-[999] bg-black opacity-90"
             : "hidden"
         }
       ></div>

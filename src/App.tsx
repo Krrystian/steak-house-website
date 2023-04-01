@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AboutUs } from "./components/AboutUs";
+import { Menu } from "./components/Menu";
 import { Navbar } from "./components/Navbar";
 import { OurKitchen } from "./components/OurKitchen";
 import { Scene } from "./components/Scene";
@@ -60,6 +60,7 @@ function App() {
       />
       <Scene video={true} source="/src/assets/video2.mp4"></Scene>
       <OurKitchen />
+      <Menu />
     </>
   );
 }
