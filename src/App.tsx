@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { StrictMode, useState } from "react";
 import { Footer } from "./components/Footer";
 import { Gallery } from "./components/Gallery";
 import { Menu } from "./components/Menu";
