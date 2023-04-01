@@ -25,7 +25,7 @@ export const Menu = ({ items }: Props) => {
         </div>
       </div>
       <img
-        src="src/assets/background2.jpg"
+        src="/background2.jpg"
         className="absolute z-[-1] top-0 left-0 object-cover h-full w-full brightness-[40%] md:brightness-[70%]"
         alt=""
       />

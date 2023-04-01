@@ -74,7 +74,7 @@ function App() {
         navbarOpen={navbarOpen}
         setNavbarOpen={setNavbarOpen}
       />
-      <Scene video={true} source="/src/assets/video2.mp4"></Scene>
+      <Scene video={true} source="/video2.mp4"></Scene>
       <OurKitchen />
       <Menu items={menuItems} />
       <Gallery items={images} />
