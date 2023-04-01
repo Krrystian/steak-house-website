@@ -3,9 +3,9 @@ import React from "react";
 export const OurKitchen = () => {
   return (
     <div className="relative mb-3 overflow-hidden">
-      <div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-16 pb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-16 pb-12 min-h-screen pt-[100px]">
         <div className="col-span-2 text-neutral-300 font-codepro text-center flex flex-col justify-center gap-20">
-          <h3 className="md:text-6xl text-4xl italic pt-[60px]">
+          <h3 className="md:text-6xl text-4xl italic">
             We put <span className="text-[#fc6203]">High-Stake</span> to make
             <span className="text-[#fc6203]"> High-Steak</span>.
           </h3>
@@ -26,7 +26,7 @@ export const OurKitchen = () => {
         </div>
         <div className="flex justify-center mx-4 md:order-first py-10">
           <img
-            src="/src/assets/Food/liveCooking.jpg"
+            src="/src/assets/liveCooking.jpg"
             className="md:h-[44rem] w-full object-cover rounded-xl shadow-2xl brightness-[90%] shadow-slate-900"
             alt=""
           />
