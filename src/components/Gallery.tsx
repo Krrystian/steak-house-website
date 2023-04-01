@@ -21,7 +21,7 @@ export const Gallery = ({ items }: Props) => {
             </div>
             <img
               key={index}
-              src={"/gallery/" + item.src}
+              src={"gallery/" + item.src}
               className={
                 index === 1
                   ? "w-[40rem] h-[40.5rem] object-cover rounded-xl shadow-xl brightness-[90%] shadow-slate-900"
