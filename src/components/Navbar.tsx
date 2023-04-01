@@ -25,6 +25,7 @@ export const Navbar = ({ items, navbarOpen, setNavbarOpen }: Props) => {
     const position = window.pageYOffset;
     setScrollPosition(position);
   };
+
   return (
     <>
       <div className="fixed cursor-default w-full z-[9999] flex flex-col font-codepro">
