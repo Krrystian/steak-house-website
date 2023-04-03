@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaHamburger, FaFacebook, FaInstagram } from "react-icons/fa";
 import { Divide as Hamburger } from "hamburger-react";
+import { Link } from "react-router-dom";
 
 interface Items {
   text: string;
@@ -43,12 +44,12 @@ export const Navbar = ({ items, navbarOpen, setNavbarOpen }: Props) => {
             <div className="xl:flex flex-row hidden">
               {items.map((item, index) => (
                 <div key={index}>
-                  <a
+                  <Link
                     className="px-3 hover:animate-colorChange"
-                    href={item.href}
+                    to={item.href}
                   >
                     {item.text}
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
@@ -83,12 +84,13 @@ export const Navbar = ({ items, navbarOpen, setNavbarOpen }: Props) => {
             <div className="flex flex-col text-center gap-8 text-4xl md:text-5xl text-neutral-300">
               {items.map((item, index) => (
                 <div key={index}>
-                  <a
+                  <Link
                     className="px-3 hover:animate-colorChange"
-                    href={item.href}
+                    to={item.href}
+                    onClick={() => setNavbarOpen(!navbarOpen)}
                   >
                     {item.text}
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
