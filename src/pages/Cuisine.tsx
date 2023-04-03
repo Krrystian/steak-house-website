@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Cuisine = () => {
-  return <div></div>;
+  return <div className="min-h-screen border"></div>;
 };

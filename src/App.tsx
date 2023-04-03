@@ -1,11 +1,8 @@
-import { StrictMode, useState } from "react";
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/Footer";
-import { Gallery } from "./components/Gallery";
-import { Menu } from "./components/Menu";
 import { Navbar } from "./components/Navbar";
-import { OurKitchen } from "./components/OurKitchen";
-import { Scene } from "./components/Scene";
+import { ScrollToTop } from "./components/ScrollToTop";
 import { AboutUs } from "./pages/AboutUs";
 import { Contact } from "./pages/Contact";
 import { Cuisine } from "./pages/Cuisine";
@@ -34,12 +31,12 @@ function App() {
         navbarOpen={navbarOpen}
         setNavbarOpen={setNavbarOpen}
       />
+      <ScrollToTop />
       <Routes>
         <Route path="/steak-house-website/" element={<AboutUs />} />
         <Route path="/steak-house-website/cuisine" element={<Cuisine />} />
         <Route path="/steak-house-website/contact" element={<Contact />} />
       </Routes>
-
       <Footer />
     </>
   );
