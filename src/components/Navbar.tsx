@@ -35,8 +35,8 @@ export const Navbar = ({ items, navbarOpen, setNavbarOpen }: Props) => {
             scrollPosition > 100 ? "bg-black" : ""
           }`}
         >
-          <div className="flex items-center xl:hidden mx-4 cursor-pointer">
-            <a>
+          <div className="flex items-center xl:hidden mx-4">
+            <a className="cursor-pointer">
               <Hamburger toggled={navbarOpen} toggle={setNavbarOpen} />
             </a>
           </div>
