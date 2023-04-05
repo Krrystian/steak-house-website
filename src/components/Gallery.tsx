@@ -16,7 +16,7 @@ export const Gallery = ({ items }: Props) => {
             key={index}
             className={index === 1 ? "relative row-span-2" : "relative"}
           >
-            <div className="absolute z-[100] h-full w-full text-3xl font-codepro justify-center items-center flex opacity-0 text-neutral-100 rounded-xl overflow-hidden hover:bg-black/75 hover:opacity-100 transition duration-500">
+            <div className="absolute z-[100] h-full w-full text-3xl font-codepro justify-center items-center flex opacity-0 text-neutral-100 rounded-xl overflow-hidden hover:bg-black/75 hover:opacity-100 transition-all duration-500">
               <h4>{item.popup}</h4>
             </div>
             <img

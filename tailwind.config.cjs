@@ -16,8 +16,7 @@ module.exports = {
           colorTransition:
           { 
             '100%': { color: '#fc6203'}
-          }
-
+          },
       },
       animation: {
         colorChange : 'colorTransition .5s ease-in-out forwards',

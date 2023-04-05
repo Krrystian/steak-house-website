@@ -29,6 +29,7 @@ export const Scene = ({
             autoPlay
             muted
             loop
+            controls={false}
           />
         ) : (
           <img
