@@ -137,7 +137,7 @@ export const MenuList = ({ steaks, burgers, drinks }: Props) => {
       </div>
 
       <img
-        src="cuisine.jpg"
+        src="backgrounds/cuisine.jpg"
         className="absolute z-[-1] top-0 left-0 object-fill h-full w-full brightness-[60%]"
         alt=""
       />

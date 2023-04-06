@@ -26,14 +26,14 @@ export const OurKitchen = () => {
         </div>
         <div className="flex justify-center mx-4 md:order-first py-10">
           <img
-            src="liveCooking.jpg"
+            src="backgrounds/liveCooking.jpg"
             className="md:h-[44rem] w-full object-cover rounded-xl shadow-2xl brightness-[90%] shadow-slate-900"
             alt=""
           />
         </div>
       </div>
       <img
-        src="blackbackground.jpg"
+        src="backgrounds/blackbackground.jpg"
         className="absolute z-[-1] top-0 left-0 object-fill h-full w-full brightness-[80%]"
         alt=""
       />
