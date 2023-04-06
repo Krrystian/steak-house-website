@@ -4,7 +4,7 @@ import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { AboutUs } from "./pages/AboutUs";
-import { Contact } from "./pages/Contact";
+import { ContactPage } from "./pages/ContactPage";
 import { Cuisine } from "./pages/Cuisine";
 
 const navbarItems = [
@@ -35,7 +35,7 @@ function App() {
       <Routes>
         <Route path="/steak-house-website/" element={<AboutUs />} />
         <Route path="/steak-house-website/cuisine" element={<Cuisine />} />
-        <Route path="/steak-house-website/contact" element={<Contact />} />
+        <Route path="/steak-house-website/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
     </>
