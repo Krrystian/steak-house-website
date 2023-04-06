@@ -52,7 +52,7 @@ const menuItems = [
 export const AboutUs = () => {
   return (
     <>
-      <Scene video={true} source="video2.mp4"></Scene>
+      <Scene video={true} source="backgrounds/video2.mp4"></Scene>
       <OurKitchen />
       <Menu items={menuItems} />
       <Gallery items={images} />
