@@ -15,7 +15,7 @@ export const Menu = ({ items }: Props) => {
           <div className="flex flex-col justify-center mx-3 md:mx-10 divide-y divide-[#fc6203] md:text-start">
             {items.map((item, index) => (
               <div key={index} className="py-12">
-                <h3 className="md:text-6xl text-4xl text-neutral-200">
+                <h3 className="md:text-6xl text-5xl text-neutral-200 md:text-left text-center">
                   {item.heading}
                 </h3>
                 <p className="italic">{item.description}</p>
